@@ -57,7 +57,7 @@ Ten pakiet zawiera skrypt instalacyjny pgpoolAdmina.
 
 %prep
 %setup -q
-%patch1 -p1
+%patch -P1 -p1
 cat > apache.conf <<'EOF'
 Alias /%{name} %{_appdir}
 <Directory %{_appdir}>
